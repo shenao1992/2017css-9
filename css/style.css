@@ -1,0 +1,689 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+li{
+	display: inline-block;
+ 	list-style: none;
+ /*不设置padding或者margin可能导致黑点不显示,设置了inside等于黑点在文字padding内显示*/
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.nav{
+	background-color:#2189BF;
+	width: 100%;
+	padding:0 5%;
+	box-sizing: border-box;
+	 
+}
+.nav_left{
+	display: inline-block;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.nav_right{
+	float: right;
+	margin-right: 20px;
+	margin-top: 15px;
+	position: relative;
+	
+}
+.nav_right input{
+	padding-left:40px;
+	width: 150px;
+	height: 28px;
+	border-radius: 28px;
+	box-sizing: border-box;
+	border: none;
+	transition: all 0.2s ease-out;
+}
+.nav_right input:focus{
+	width: 300px;
+}
+.nav_right a img{
+	position: absolute;
+	top: 6px;
+	left: 15px;
+}
+.nav_denglu{
+	background: url(../img/login.gif) left no-repeat;
+	float: right;
+	margin-top: 20px;
+	padding: 0 20px;
+	text-decoration: none;
+	color: white;
+	font: 12px "微软雅黑" ; 
+}
+.main{
+	width: 100%;
+	background-color: #2A2E3D;
+}
+.main_left{
+	width: 250px;
+	height:inherit;
+	float: left;
+	padding: 20px 0;
+}
+.main_left_touxiang{
+	text-align: center;	
+}
+.main_left_touxiang div:nth-child(1){
+	width: 250px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.touxiang_logo{
+	width: 50px;
+	height: 50px;
+	background:url(../img/tou.jpg) no-repeat ;
+	background-size: cover;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 30px 0 -40px;
+	transition: all 2s;
+	-ms-transition: all 2s;	/* IE 9 */
+	-moz-transition: all 2s;	/* Firefox */
+	-webkit-transition: all 2s; /* Safari 和 Chrome */
+	-o-transition:all 2s;	/* Opera */
+}
+.touxiang_logo:hover{
+	transform: rotateZ(360deg);
+	-ms-transform:rotateZ(360deg); 	/* IE 9 */
+	-moz-transform:rotateZ(360deg); 	/* Firefox */
+	-webkit-transform:rotateZ(360deg); /* Safari 和 Chrome */
+	-o-transform:rotateZ(360deg); 	/* Opera */
+}
+.touxiang_name{
+	text-decoration: none;
+	color: white;
+	position: absolute; 
+	top: 50%;
+	transform: translateY(-50%);
+}
+.main_left_touxiang div:nth-child(2) span{
+	color: #6E8095;
+	font-size: 12px;
+	padding: 0 15px 0 15px;
+}
+.main_left_touxiang div:nth-child(2) span:nth-child(1){
+	border-right: 2px solid #6E8095;
+}
+.list1>li,.list2>li,.list3>li{
+	margin-left: 50px;
+	padding: 10px 0;
+	font-size: 12px;
+	display:block;
+}
+.list1>li{
+	padding: 15px 0;
+}
+.list1>li a{
+	color: #6E8095;
+} /*控制表单间距*/
+.list1>li:first-child>a,.list2>li:nth-child(2)>a,.list3>li:first-child>a{
+	color: white;
+}
+.list1>li a span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/bg.png);
+	margin-right: 10px;
+}
+.list1>li:nth-child(2)>a>span,.list1>li:nth-child(4)>a>span,.list1>li:nth-child(5)>a>span{
+	background-position:0 36px;
+}
+.list1>li:nth-child(3)>a>span{
+	background-position:0 24px;
+}
+.list1>li:nth-child(6)>a>span{
+	background-position:0 12px;
+}
+.list2>li>a>span{
+ 	background-position:0 -12px;
+}
+.list2>li:nth-child(2)>a>span{
+	background-position:0 -24px;
+}
+.list3>li>a>span{
+	background-position:0 -36px;
+}
+.xiangyou,.xiangxia{
+	display: inline-block;
+	background-size: cover;
+	margin-right: 10px;
+}
+.xiangyou{
+	background: url(../img/r-arrow.png);
+	width: 7px;
+	height: 12px;
+}
+.xiangxia{
+	background:url(../img/d-arrow.png);
+	width: 10px;
+	height: 9px;
+}
+.main_right{
+	margin-left: 250px;
+	width: auto;
+}
+.main_right_nav{
+	height: 30px;
+	background-color: white;
+}
+.main_right_nav ul{
+	margin-left: 30px;	
+}
+.main_right_nav ul li{
+	float: left;
+	margin: 7px 0;
+	border-right: 1px solid silver;
+	-webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+.main_right_nav ul li a{
+	display:block;
+	font-size: 12px;
+	padding:0 10px;
+	color:silver;
+	-webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+.main_right_nav ul li:nth-child(4) a{
+	color: blue;
+}
+.main_right_warp{
+	background-color: #EEEEEE;
+	padding-top:30px;
+}
+.main_right_part1{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: white;
+	border: 1px solid silver;
+	padding: 15px 30px;
+	box-sizing: border-box;
+}
+/*-------主要内容分界线第一部分---------*/
+.main_right_part1 span{
+	margin-right: 10px;
+	color: silver;
+	font-size: 12px;
+}
+.part1_search,.part1_buysell,.part1_others,.part1_submit{
+	float: left;
+	height: 70px;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 10px;	
+}
+.part1_search{
+	width: 150px;
+}
+.main_right_part1 select{
+	height: 25px;
+}
+.part1_buysell{
+	width: 250px;
+	background: url(../img/exchange.png) no-repeat center right;
+}
+.part1_buysell select{
+	width: 140px;
+}
+.part1_others{
+	width: 400px;
+	text-align: left;
+	padding-left: 50px;
+}
+.part1_buysell_wrap1,.part1_buysell_wrap2,.part1_others_warp1,.part1_others_warp2,.part1_others_warp3,.part1_others_warp4{
+	display: inline-block;
+	margin-bottom: 3px;
+}
+.part1_others_warp1 input{
+	height: 25px;
+	box-sizing: border-box;
+}
+.part1_others_warp1 input,.part1_others_warp4 select{
+	width: 140px;
+}
+.part1_others_warp2 select,.part1_others_warp3 select{
+	width: 80px;
+}
+.part1_submit{
+	width: 100px;
+}
+.part1_submit button{
+	margin-top: 13px;
+	background-color: #388ac1;
+	border: none;
+	width: 50px;
+	height: 30px;
+	color: white;
+	cursor: pointer;
+}
+.main_right_part2{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+}
+/*第二部分分界线*/
+.main_right_part2 ul li{
+	float: left;
+	height: 80px;
+	margin: 10px 5px 0 0;
+	background-color: white;
+	text-align: center;
+	border: 1px solid silver;
+	box-sizing: border-box;
+}
+.main_right_part2 ul li:nth-child(n+2):nth-child(-n+7){
+	width: 120px;
+}
+.main_right_part2 ul li:nth-child(1),.main_right_part2 ul li:nth-child(8){
+	width: 40px;
+}
+.main_right_part2 ul li:nth-child(9){
+	width: 160px;
+	margin-right: 0px;
+}
+.main_right_part2 ul li:nth-child(1){
+	background: url(../img/left.png) no-repeat center;
+	background-size: 20px 20px;
+	background-color: white;
+}
+.main_right_part2 ul li:nth-child(8){
+	background: url(../img/right.png) no-repeat center;
+	background-size: 20px 20px;
+	background-color: white;
+}
+.main_right_part2 ul li:nth-child(9) a{
+	line-height: 80px;
+	color: black;
+	padding:10px 0 10px 40px;
+	background: url(../img/calendar.png) no-repeat left;
+}
+.main_right_part2 ul li:hover{
+	border-top: 2px solid #4389c9;
+	cursor: pointer;
+}
+.part2_time,.part2_money{
+	display: block;
+}
+.part2_time{
+	font-size: 12px;
+	margin-top: 12px;
+}
+.part2_money{
+	display:inline-block;
+	margin-top: 8px;
+	font-size: 21px;
+	color: #ec6500;
+	padding-left: 20px;
+	background: url(../img/人民币.png) no-repeat left;
+	background-size: 20px 20px;
+}
+.main_right_part3{
+	width: 1000px;
+	height: 120px;
+	margin: 0 auto;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+.main_right_part3 ul li{
+	float: left;
+	width: 205px;
+	height: 80px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	margin:5px 60px 0 0;
+	position: relative;
+	background-color: white;
+}
+.main_right_part3 ul li p{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.main_right_part3 ul li p:first-child{
+	margin: 17px 0 10px 10px;
+}
+.main_right_part3 ul li p:last-child{
+	color: silver;
+}
+.main_right_part3 ul li:first-child{
+	border-left: 3px solid #43b29e;
+}
+.main_right_part3 ul li:nth-child(2){
+	border-left: 3px solid #388ac1;
+}
+.main_right_part3 ul li:nth-child(3){
+	border-left: 3px solid #d04a36;
+}
+.main_right_part3 ul li:last-child{
+	border-left: 3px solid #e2cd46;
+	margin-right: 0;
+}
+.main_right_part3 ul li::after{
+	content: "";
+	width: 66px;
+	height: 50px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+.main_right_part3 ul li:first-child::after{
+	background-color: #43b29e;
+}
+.main_right_part3 ul li:nth-child(2)::after{
+	background-color: #388ac1;
+}
+.main_right_part3 ul li:nth-child(3)::after{
+	background-color: #d04a36;	
+}
+.main_right_part3 ul li:last-child::after{
+	background-color: #e2cd46;	
+}
+.main_right_part4{
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+}
+.count1,.count2,.count3,.count4{
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid silver;
+	border-radius: 5px;
+	background-color: white;
+	vertical-align: middle;
+	/*vertical-align: middle;解决inline-block定位 元素下沉问题*/
+}
+.count1{
+	width: 600px;
+	height: 400px;
+}
+.count2{
+	width:395px;
+	height: 400px;
+}
+.count3{
+	width:395px;
+	height: 400px;
+	margin: 5px 5px 0 0;
+}
+.count4{
+	width: 595px;
+	height: 400px;
+	margin-top: 5px;
+}
+.title{
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	padding-left: 40px;
+	color: #aaa;
+	background-color: #f4f5f6;
+	border-bottom: 1px solid #aaa;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   /* 这两个radius为了不让外面边框的radius消失,因为两个div是嵌套关系,所有都得加*/
+}
+.count1_wrap{
+	width: 550px;
+	height: 300px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.count1 ul{
+	position: relative;
+}
+.count1 ul li{
+	margin-right:3px ;
+}
+.count1 ul li input{
+	display: none;
+}
+.count1 ul li label{
+	width: 91px;
+	height: 31px;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background-color: #ededf0;
+	padding: 5px 20px;
+	cursor: pointer;
+	margin-right:3px ;
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+}
+/*z-index必须要在有定位的元素上才能生效*/
+.count1 ul li input:checked~label{
+	background-color: white;
+	border: 1px solid #aaa;
+	border-bottom: 1px solid white;
+	z-index:2;
+}
+.count1 ul li input:checked~.tab_content{
+	display: block;
+}
+/*~是相邻同胞选择器*/
+.tab_content{
+	width: 550px;
+	height: 248px;
+	border: 1px solid #aaa;
+	margin-top: -1px;
+/*	margin-top: -1px;实现边框的覆盖*/
+	box-sizing: border-box;
+	position: absolute;/*不设置left和top它会排在lable下面*/
+	/*一个div中有个absolute属性元素，其没有left或是top值，与原文档流位置一致，即保持位置不变，
+	但是一旦设置了left:0;top:0对不起，这个absolute元素立马变身，直接从DOM tree里面脱离，独立于文档流，
+	结果相对于最近的relative属性的祖先标签定位*/
+	left: 0;
+	/*只设置left是为了让tab切换的表格都紧靠左边*/ 
+	top: 32;
+	display: none;
+	z-index: 1;
+}
+.tab_content table{
+	margin: 30px auto;
+	border: 1px solid #aaa;
+}
+.tab_content table td{
+	border: 1px solid #aaa;
+	padding: 5px 25px;
+	font-size: 14px;
+}
+table{ 
+border-collapse:collapse; 
+} 
+/*合并边框*/
+.count2_warp{
+	width: 300px;
+	height: 300px;
+	margin: 20px auto;
+}
+.count2_warp label{
+	display: block;
+	font-size: 12px;
+	color:#c3c2c2;
+	margin-bottom: 8px;
+}
+.count2_warp input{
+	border: none;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	width: 100px;
+}
+.line2_boss,.line2_price{
+	display: inline-block;
+	width: 120px;
+}
+.line2_price{
+	border-right: 1px solid #c3c2c2;
+}
+.count2_line3 textarea{
+	border: none;
+	resize: none;
+	/*resize: none;设置textarea不可拉伸*/
+}
+.count2_line1,.count2_line2,.count2_line3{
+	border-bottom: 1px solid #aaa;
+}
+.count2_line4{
+	margin-top: 20px;
+}
+.count2_line4 input{
+	margin: 0;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.count2_line4 label{
+	display: inline-block;
+	margin: 0;
+}
+.count2_line4 button{
+	cursor: pointer;
+	background-color:#388ac1 ;
+	color: white;
+	width:50px;
+	height: 25px;
+	border: none;
+	float: right;
+}
+.line3_warp{
+	width: 364px;
+	margin: 0px auto;
+}
+.count3_line1{
+	height: 20px;
+	margin: 0px auto;
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #2189BF;
+}
+.count3_line1>div{
+	display: inline-block;
+	margin: 0 12px;
+	border: 1px solid #c3c2c2;
+	font-size: 12px;
+	float: left;
+}
+.year{
+	margin-left: 0px!important;
+	width: 70px;
+}
+.year span,.day span{
+	display:inline-block;
+	border-right: 1px dashed #c3c2c2;
+	padding:2px 5px;
+}
+.year a,.day a{
+	display: inline-block;
+	width: 7px;
+	height: 5px;
+	margin-right:4px;
+	background:url(../img/down.png) no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+}
+.day,.month{
+	width: 75px;
+}
+.month span{
+	display:inline-block;
+	padding: 2px 10px;
+	border-right: 1px dashed #c3c2c2;
+	border-left: 1px dashed #c3c2c2;
+}
+.month a{
+	display: inline-block;
+	background: url(../img/r-arrow.png);
+	background-size: cover;
+	width: 7px;
+	height: 12px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.month a:first-child{
+	transform: rotate(180deg);
+	margin-left:5px ;
+}
+.month a:last-child{
+	margin-right:5px ;
+}
+.returntoday{
+	margin-right: 0px;
+	padding: 2px 5px;
+	cursor: pointer;
+	margin-right: 0px!important;
+	float: right!important;
+}
+.returntoday:hover{
+	color: white;
+	background-color: red;
+}
+/*.count3_line2{
+	display: inline-block;
+	height: 36px;
+	width: 364px;
+	border-bottom: 1px solid #c3c2c2;
+}
+.count3_line2 ul li{
+	float: left;
+	font-size:12px;
+	padding: 10px 20px;
+}*/
+.rili{
+	width: 364px;
+	text-align: center;
+	/*font-size: 0px;*/
+}
+.rili thead tr,.rili tbody tr{
+		font-size: 0px;
+}
+/*标签的换行，或者是内容的换行，在界面中是会出现空格的间隙,在其父元素上加font-size: 0px，使空白文本为0，解决这个问题*/
+.rili td{
+	width: 52px;	
+	padding:10px 0;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 12px;
+}
+.rili tbody td:hover{
+	border: 1px solid #FFC125;
+}
+.rili thead tr{
+	border-bottom: 1px solid #c3c2c2;
+}
+.rili tbody td{
+	height: 52px;
+}
+.rili td p{
+	color: blue;
+}
+.zm,.holiday{
+	color: red!important;
+}
+.count4 table{
+	margin: 20px auto;
+	text-align: center;
+}
+.count4 table td,.count4 table th{
+	border: 1px solid #c3c2c2;
+	padding: 7px 30px;	
+	font-size: 12px;
+}
+.count4 table tr td:last-child{
+	text-align: left;
+	width: 250px;
+	background: url(../img/table1.png) no-repeat right;
+	background-origin: content-box;
+}
+.count4 table tr:last-child td{
+	border-bottom:none;
+}
