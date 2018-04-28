@@ -70,10 +70,11 @@ a{
 .main_left_touxiang{
 	text-align: center;	
 }
-.main_left_touxiang div:nth-child(1){
+.imformation{
 	width: 250px;
 	position: relative;
-	margin-bottom: 20px;
+	display: inline-block;
+	margin: 0 30px 20px -40px;
 }
 .touxiang_logo{
 	width: 50px;
@@ -82,21 +83,13 @@ a{
 	background-size: cover;
 	border-radius: 50%;
 	display: inline-block;
-	margin: 0 30px 0 -40px;
-	transition: all 2s;
-	-ms-transition: all 2s;	/* IE 9 */
-	-moz-transition: all 2s;	/* Firefox */
-	-webkit-transition: all 2s; /* Safari 和 Chrome */
-	-o-transition:all 2s;	/* Opera */
+	transition: transform 2s;
 }
 .touxiang_logo:hover{
 	transform: rotateZ(360deg);
-	-ms-transform:rotateZ(360deg); 	/* IE 9 */
-	-moz-transform:rotateZ(360deg); 	/* Firefox */
-	-webkit-transform:rotateZ(360deg); /* Safari 和 Chrome */
-	-o-transform:rotateZ(360deg); 	/* Opera */
 }
 .touxiang_name{
+	margin-left: 20px;
 	text-decoration: none;
 	color: white;
 	position: absolute; 
